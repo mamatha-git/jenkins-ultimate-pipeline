@@ -14,5 +14,7 @@ Code Maintainence
 Reduce the risk of errors
 
 
-![Uploading image.png…]()
+<img width="757" height="671" alt="image" src="https://github.com/user-attachments/assets/66a5c935-eacf-4833-9964-4655b1fddadb" />
+
+
 
