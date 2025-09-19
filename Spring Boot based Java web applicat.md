@@ -35,37 +35,17 @@ Hurray !! Access the application on http://<ip-address>:8010
 
 ## Configure a Sonar Server locally
 
-# SonarQube Installation Guide
+# System Requirements:
+# Java 17+ (Oracle JDK, OpenJDK, or AdoptOpenJDK)
+# Hardware Recommendations:
+#   Minimum 2 GB RAM
+#   2 CPU cores
 
-## 📋 System Requirements
-- **Java:** 17+ (Oracle JDK, OpenJDK, or AdoptOpenJDK)  
-- **Hardware Recommendations:**  
-  - Minimum **2 GB RAM**  
-  - **2 CPU cores**  
-
----
-
-## 🛠 Installation Steps
-
-```bash
-# Update system and install unzip
 sudo apt update && sudo apt install unzip -y
-
-# Add a new user for SonarQube
 adduser sonarqube
-
-# Download SonarQube
 wget https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-10.4.1.88267.zip
-
-# Unzip the package
 unzip *
-
-# Change ownership and permissions
 chown -R sonarqube:sonarqube /opt/sonarqube
 chmod -R 775 /opt/sonarqube
-
-# Navigate to SonarQube binaries
 cd /opt/sonarqube/bin/linux-x86-64
-
-# Start SonarQube
 ./sonar.sh start
