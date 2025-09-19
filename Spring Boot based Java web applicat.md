@@ -19,17 +19,22 @@ The above maven target stroes the artifacts to the target directory. You can eit
 ** Note: To avoid issues with local setup, Java versions and other dependencies, I would recommend the docker way. **
 
 ## Execute locally (Java 11 needed) and access the application on http://localhost:8080
+
 java -jar target/spring-boot-web.jar
 
 ## The Docker way
 Build the Docker Image
 
 docker build -t ultimate-cicd-pipeline:v1 .
+
 docker run -d -p 8010:8080 -t ultimate-cicd-pipeline:v1
+
 Hurray !! Access the application on http://<ip-address>:8010
 
 ## Next Steps
+
 ## Configure a Sonar Server locally
+
 System Requirements
 Java 17+ (Oracle JDK, OpenJDK, or AdoptOpenJDK)
 Hardware Recommendations:
@@ -45,3 +50,4 @@ cd /opt/sonarqube/bin/linux-x86-64
 ./sonar.sh start
 
 Hurray !! Now you can access the SonarQube Server on http://<ip-address>:9000
+
